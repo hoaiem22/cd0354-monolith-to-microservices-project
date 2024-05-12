@@ -1,4 +1,4 @@
-version: 2.1ádasd
+version: 2.1
 jobs:
   lint-app:
     docker:
