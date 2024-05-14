@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: hoaiem22/udagram-frontend:v2
+          image: hoaiem22/udagram-frontend:v3
           imagePullPolicy: Always
           ports:
             - containerPort: 80
