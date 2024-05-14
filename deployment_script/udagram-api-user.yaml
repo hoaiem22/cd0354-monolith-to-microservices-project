@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: hoaiem22/udagram-api-user:v4
+          image: hoaiem22/udagram-api-user:v5
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
