@@ -16,18 +16,10 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: hoaiem22/udagram-frontend:v3
+          image: hoaiem22/udagram-frontend:v4
           imagePullPolicy: Always
           ports:
             - containerPort: 80
-
-          envFrom:
-            - secretRef:
-                name: env-secret
-            - secretRef:
-                name: aws-secret
-            - configMapRef:
-                name: env-configmap
           resources:
             limits:
               cpu: "1"
@@ -35,16 +27,3 @@ spec:
             requests:
               cpu: "200m"
               memory: "250Mi"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: frontend-service
-spec:
-  selector:
-    app: frontend
-  ports:
-    - name: "80"
-      port: 80
-      targetPort: 80
-      protocol: TCP
