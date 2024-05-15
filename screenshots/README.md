@@ -23,3 +23,6 @@ kubectl describe hpa
 ```bash
 kubectl logs {pod_name}
 ```
+
+* My endpoint:
+http://a84cd4402b30c4b9c841f17cf35264e9-1239356262.us-east-1.elb.amazonaws.com/
